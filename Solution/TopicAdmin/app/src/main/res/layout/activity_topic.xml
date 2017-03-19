@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="es.uca.airservices.topicadmin.TopicActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:weightSum="1"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+
+        <TextView
+            android:id="@+id/InitialMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Entre en el sistema utilizando su usuario y contraseña de administrador para activar las listas de suscripción del sistema"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="10dp" />
+
+        <Spinner
+            android:id="@+id/pollutantList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.13" />
+
+        <Spinner
+            android:id="@+id/alertList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.16" />
+
+        <Button
+            android:id="@+id/buttonActivate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Activar suscripción seleccionada" />
+
+        <Button
+            android:id="@+id/buttonCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Cancelar suscripción seleccionada" />
+
+        <Button
+            android:id="@+id/buttonSubscribeAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="0.13"
+            android:text="Activar todas las suscripciones" />
+
+        <Button
+            android:id="@+id/buttonUnsubscribeAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="0.13"
+            android:text="Cancelar todas las suscripciones" />
+
+        <Button
+            android:id="@+id/buttonLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="0.13"
+            android:text="Salir" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
